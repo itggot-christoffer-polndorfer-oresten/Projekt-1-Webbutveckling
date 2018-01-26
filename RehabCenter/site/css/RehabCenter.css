@@ -1,1 +1,42 @@
-@media only screen and (max-device-width: 360px) and (max-device-height: 740px){
+
+
+
+@media screen 
+  and (max-device-width: 360px) 
+   {
+
+    body{
+        margin: auto;
+        width: 360px;
+        height: 718px;
+        background-color: black; 
+        display: grid;
+        grid-template-rows: repeat(12, 1fr);
+     }
+
+    header{
+        grid-row: span 1;
+        background-color: white;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: 1fr;
+
+    }
+    article{
+        grid-row: span 4;
+        background-color: rgb(68, 68, 68)
+
+    }
+
+    main{
+        grid-row: span 6;
+        background-color: grey;
+
+    }
+
+    footer{
+        grid-row: span 1;
+        background-color: rgb(163, 163, 163);
+
+    }
+}
