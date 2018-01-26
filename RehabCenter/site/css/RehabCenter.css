@@ -2,7 +2,7 @@
 
 
 @media screen 
-  and (max-device-width: 360px) 
+  and (max-device-width: 412px) 
    {
 
     body{
@@ -22,6 +22,11 @@
         grid-template-rows: 1fr;
 
     }
+
+    .hamburgermenu{
+        
+
+    }
     article{
         grid-row: span 4;
         background-color: rgb(68, 68, 68)
@@ -39,4 +44,6 @@
         background-color: rgb(163, 163, 163);
 
     }
+
+
 }
