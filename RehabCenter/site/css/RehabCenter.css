@@ -18,7 +18,7 @@ header{
 }
 
 .hamburgermenu{
-    padding-top: 10px;
+    padding-top: 0.25em;
     grid-column: 1/2;
     margin: auto;
 }
@@ -27,29 +27,30 @@ header{
     grid-column: 2/5;
     grid-row: 1/2;
     text-align: center;
-    padding-top: 11px;
-    font-size: 30px;
+    padding-top: 0.25em;
+    font-size: 2em;
 }
 
 .logotype{
-    font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+    font-family: 'Open Sans', bold, sans-serif;
     color: rgb(224, 224, 224);
 }
 
 .hamburgermenu i {
-    font-size: 40px;
+    font-size: 3em;
     color: white;
 }
 
 .personbutton{
-    padding-top: 10px;
+    padding-top: 0.25em;
     grid-column: 5/6;
     margin: auto;
-    color: white;
+    
 }
 
 .personbutton i{
-    font-size: 40px;
+    font-size: 3em;
+    color: white;
 }
 
 
@@ -72,12 +73,17 @@ article{
     background-color: rgb(31, 40, 63);
     border: 1px solid rgb(255, 255, 255);
     border-radius: 10px; 
-    z-index: 5;
+    z-index: 4;
+   
+}
+
+.buy_now_button h3{
     font-family:'Open Sans', bold, sans-serif;
     font-size: 1.5em;       
     text-align: center;
-    margin-top: 12px;
     color: rgb(224, 224, 224);
+    margin: 0;
+    padding-top: 0.42em;
 }
 
 
@@ -114,5 +120,19 @@ footer{
     grid-column: span 2;
     grid-row: span 2;
     background-color: white;
+
+}
+
+.menu1{
+    width: 45vw;
+    height: 100vh;
+    position: absolute;
+    background: white;
+    display: none;
+    z-index: 6;
+}
+
+.show{
+    display: block;
 
 }
