@@ -1,12 +1,16 @@
 body{
     margin: auto;
-    width: 412px;
+    width: 100vw;
     height: auto;
     background-color: rgb(255, 255, 255); 
     display: grid;
     grid-template-columns: repeat(1fr 2);
     grid-template-rows: repeat(12, 1fr) repeat(5, 54.3833px);
+    overflow-x: hidden;
+    max-width: 100%
     }
+
+
 
 header{
     grid-row: span 1;
@@ -90,7 +94,7 @@ article{
 .background_image{
     background-image: url('../img/slider4.jpg');  
     background-repeat: no-repeat;
-    filter: blur(3px);  
+    filter: blur(0.35em);  
     grid-column: 1 / 9;
     grid-row: 1 / 11;        
 }
@@ -110,7 +114,7 @@ main{
 }
 
 h1.about_us{
-    margin: 0px;
+    margin: 0em;
     font-size: 1.5em;
     text-align: center;
 
@@ -123,16 +127,32 @@ footer{
 
 }
 
-.menu1{
-    width: 45vw;
+.hamburger_slidemenu{
+    width: 50vw;
     height: 100vh;
-    position: absolute;
-    background: white;
-    display: none;
     z-index: 6;
+    position: absolute;
+    background: rgb(31, 40, 63);    
+    top: 56px;
+    transform: translateX(-100%);
+    transition: transform 0.7s;
+}
+.profile_menu{
+    margin-left: 50vw;
+    width: 50vw;
+    height: 100vh;
+    z-index: 6;
+    position: absolute;
+    background: rgb(31, 40, 63);    
+    top: 56px;
+    transform: translateX(100%);
+    transition: transform 0.7s;
 }
 
 .show{
-    display: block;
+    transform: translateX(0);
+}
 
+.show2{
+    transform: translateX(0);
 }
