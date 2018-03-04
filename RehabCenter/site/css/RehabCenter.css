@@ -113,12 +113,7 @@ main{
     
 }
 
-h1.about_us{
-    margin: 0em;
-    font-size: 1.5em;
-    text-align: center;
 
-}
 
 footer{
     grid-column: span 2;
@@ -155,6 +150,9 @@ footer{
     transition: transform 0.7s;
     border-top: white solid 0.1em;
     border-left: white solid 0.1em;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(10, 1fr);
     
 }
 
@@ -166,10 +164,40 @@ footer{
     transform: translateX(0);
 }
 
-.hamburger_slidemenu ul{
-    color: white;
-    font-family: 'Open Sans', bold, sans-serif;
+.boka_pass{
+    grid-column: span 3;
+    grid-row: span 1;
     font-size: 1em;
+    color: white;
+    text-decoration: underline;
+    text-align: center;
+}
+
+.boka_gruppträning {
+    grid-column: span 3;
+    grid-row: span 1;
+    font-size: 1em;
+    color: white;
+    text-decoration: underline;
+    text-align: center;
+}
+
+.boka_personligtränare {
+    grid-column: span 3;
+    grid-row: span 1;
+    font-size: 1em;
+    color: white;
+    text-decoration: underline;
+    text-align: center;
+}
+
+.min_profil{
+    grid-column: span 3;
+    grid-row: span 1;
+    font-size: 1em;
+    color: white;
+    text-decoration: underline;
     text-align: center;
 
 }
+
