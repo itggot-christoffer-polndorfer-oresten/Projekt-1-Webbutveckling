@@ -109,8 +109,6 @@ main{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(7, 1fr);
-
-    
 }
 
 
@@ -119,7 +117,6 @@ footer{
     grid-column: span 2;
     grid-row: span 2;
     background-color: white;
-
 }
 
 .hamburger_slidemenu{
@@ -135,9 +132,9 @@ footer{
     border-right: white solid 0.1em;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(10, 1fr);
-    
+    grid-template-rows: repeat(10, 1fr);   
 }
+
 .profile_menu{
     margin-left: 50vw;
     width: 50vw;
@@ -152,8 +149,7 @@ footer{
     border-left: white solid 0.1em;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(10, 1fr);
-    
+    grid-template-rows: repeat(10, 1fr);  
 }
 
 .show{
