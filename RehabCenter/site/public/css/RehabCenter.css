@@ -10,8 +10,6 @@ body{
     max-width: 100%
     }
 
-
-
 header{
     grid-row: span 1;
     grid-column: span 2;
@@ -160,7 +158,6 @@ footer{
     transform: translateX(0);
 }
 
-
 .Ham_menu{
     grid-column: span 3;
     grid-row: span 1;
@@ -177,10 +174,27 @@ footer{
     color: white;
     text-decoration: underline;
     text-align: center;
-
 }
 
 a{
     color: white;
 }
+
+.DAVIDS_IMAGINÄRA_GRILLKORV{
+        background-image: url('../img/korv_med_brod_right.png');
+        background-color: white;
+        background-repeat: no-repeat;  
+        grid-column: 1 / 9;
+        grid-row: 1 / 15;
+}
+
+.imaginär_grillkorv{
+    text-align: center;
+    background-color: white;
+    z-index: 6;
+    grid-column: 1 / 9;
+    grid-row: 15 / 16;
+
+}
+
 
