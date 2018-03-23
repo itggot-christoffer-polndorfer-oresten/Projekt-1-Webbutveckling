@@ -86,6 +86,7 @@ article{
     color: rgb(224, 224, 224);
     margin: 0;
     padding-top: 0.42em;
+    text-decoration: none;
 }
 
 
@@ -108,8 +109,6 @@ main{
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(7, 1fr);
 }
-
-
 
 footer{
     grid-column: span 2;
@@ -197,4 +196,73 @@ a{
 
 }
 
+@media only screen and (min-device-width:400px){
+    .DAVIDS_IMAGINÄRA_GRILLKORV{
+        background-image: url('../img/korv_med_brod_right.png');
+        background-color: white;
+        background-repeat: no-repeat;  
+        background-position: center;
+        grid-column: 1 / 9;
+        grid-row: 1 / 15;
+    }
 
+    .hamburger_slidemenu{
+        width: 30vw;
+        height: 100vh;
+        z-index: 6;
+        position: absolute;
+        background: rgb(31, 40, 63);    
+        top: 57px;
+        transform: translateX(-100%);
+        transition: transform 0.7s;
+        border-top: white solid 0.1em;
+        border-right: white solid 0.1em;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(10, 1fr);   
+    }
+    
+    .profile_menu{
+        margin-left: 50vw;
+        width: 30vw;
+        height: 100vh;
+        z-index: 6;
+        position: absolute;
+        background: rgb(31, 40, 63);    
+        top: 57px;
+        transform: translateX(200%);
+        transition: transform 0.7s;
+        border-top: white solid 0.1em;
+        border-left: white solid 0.1em;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(10, 1fr);  
+    }
+    
+    .show{
+        transform: translateX(0);
+    }
+    
+    .show2{
+        transform: translateX(65%);
+    }
+
+    .background_image{
+        background-image: url('../img/slider4.jpg');  
+        background-repeat: no-repeat;
+        filter: blur(0.35em);  
+        grid-column: 1 / 9;
+        grid-row: 1 / 11;        
+        background-position: center;
+    }
+
+    .buy_now_button{
+        grid-row: 8 / 10;
+        grid-column: 2/5;
+        background-color: rgb(31, 40, 63);
+        border: 1px solid rgb(255, 255, 255);
+        border-radius: 10px; 
+        z-index: 4;
+       
+    }
+}
