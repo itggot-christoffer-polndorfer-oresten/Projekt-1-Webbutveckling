@@ -160,7 +160,8 @@ footer{
     transform: translateX(0);
 }
 
-.boka_pass{
+
+.Ham_menu{
     grid-column: span 3;
     grid-row: span 1;
     font-size: 1em;
@@ -169,31 +170,17 @@ footer{
     text-align: center;
 }
 
-.boka_gruppträning {
+.prof_menu{
     grid-column: span 3;
     grid-row: span 1;
     font-size: 1em;
     color: white;
     text-decoration: underline;
     text-align: center;
+
 }
 
-.boka_personligtränare {
-    grid-column: span 3;
-    grid-row: span 1;
-    font-size: 1em;
+a{
     color: white;
-    text-decoration: underline;
-    text-align: center;
-}
-
-.min_profil{
-    grid-column: span 3;
-    grid-row: span 1;
-    font-size: 1em;
-    color: white;
-    text-decoration: underline;
-    text-align: center;
-
 }
 
